@@ -1,7 +1,7 @@
 # laboratorioTecWeb
 Progetto del corso tecnologie web di laboratorio
 
-Files: \n
+Files: 
   -html
     -index.html
     -squadra.html
