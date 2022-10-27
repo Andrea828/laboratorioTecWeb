@@ -1,0 +1,116 @@
+* {
+    padding: 0em;
+    margin: 0em;
+}
+
+:root {
+    --bgcolor: #0365AE;
+    --txtcolor: #fff;
+    --breadcolor: #163F77;
+    --newscolor: #F3C42B;
+    --newstxtcolor: #000;
+    --contenttxtcolor: #000;
+    --contentbgcolor: #fff;
+    --linkcolor: #fff;
+    --visitedcolor: #F3C42B;
+
+}
+
+html, body {
+    font-size : 100%;
+    font-family: "Verdana", sans-serif;
+    line-height: 1.5em;
+}
+
+html {
+    background-image: url('./images/bg.png'); /*Pesa troppo, non deve essere sopra il mega*/
+    background-size: contain; /*Riempie tutto, quindi si ripete in caso ma se l'immagine e' grande abbastanza non dovrebbe*/
+}
+
+header {
+    text-align: center;
+    padding: 1.0em;
+    padding-top: 0.7em;
+}
+
+header h1 {
+    
+}
+
+header h2 {
+    font-size: 1.8em;
+    padding: 0.5em;
+    margin-top: 0.3em;
+}
+
+body {
+    max-width: 1024px; /*comprile larghezza*/
+    border: 1px solid #000;
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+    margin: auto;
+
+}
+
+/*sezione header*/
+
+
+
+/**/
+main {
+    background-color:var(--contentbgcolor);
+    color: var(--contenttxtcolor);
+    margin: 28%;
+}
+
+aside h2 {
+    background-color:var(--newscolor);
+    color: var(--newstxtcolor);
+}
+/*sezione news*/
+aside {
+    float: right;
+    width: 20%;
+}
+#breadcrumb {
+    font-size: 1.1em;
+    padding: 0.5em 0em 0.5em 1.0em;
+    border: 1px solid #000;
+}
+
+#breadcrumb, footer {
+    background-color: var(--breadcolor);
+}
+
+#breadcrumb a:link {
+    color:var(--linkcolor);
+}
+
+#breadcrumb a:visited {
+    color:var(--visitedcolor);
+}
+
+#menu {
+    float: left;
+    width: 25%;
+    font-size: 1.3em;
+}
+
+
+#menu a:link {
+    color:var(--linkcolor);
+}
+
+#menu a:visited {
+    color:var(--visitedcolor);
+}
+
+
+
+
+
+/*
+#0365AE bakcground
+#163F77 breadcrumb
+#F3C42B arancione
+*/
