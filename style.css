@@ -192,4 +192,11 @@ SEZIONE FOOTER
 footer{
 	background-color: var(--breadcolor);
 	color: var(--txtcolor);
+	text-align: center;
+}
+
+footer p {
+	display: inline;
+	font-size: italic;
+	font-size: 0.8em;
 }
