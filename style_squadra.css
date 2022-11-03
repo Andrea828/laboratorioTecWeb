@@ -139,7 +139,52 @@ main{
 	color: var(--contentxtcolor);
  	background-color: var(--contentbgcolor);
  	
- }
+}
+
+ main dl {
+    width: 95%;
+    margin: auto;
+}
+
+#giocatori>dt {
+    background-color: var(--breadcolor);
+    color: var(--textcolor);
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+#giocatori>dd {
+    border: 1px solid #000;
+    border-top: none;
+    padding: 0.5em;
+}
+
+#giocatori>dd img {
+    float:left;
+    width:20%;
+}
+
+#giocatori > dd dl {
+    margin-left: 25%;
+}
+
+.giocatore dt{
+    float: left;
+    font-weight: bold;
+    padding-right: 0.5em;
+}
+/*
+.giocatore dt::after {
+    content: ": ";
+}
+*/
+.riconoscimenti ul{
+    float:none;
+    
+    word-break: break-all;
+}
+ 
+
 
  /*
 ==============
