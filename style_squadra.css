@@ -141,9 +141,13 @@ main{
  	
 }
 
- main dl {
+ main>dl {
     width: 95%;
     margin: auto;
+}
+
+#giocatori ul {
+	list-style-type: none;
 }
 
 #giocatori>dt {
@@ -164,8 +168,9 @@ main{
     width:20%;
 }
 
-#giocatori > dd dl {
-    margin-left: 25%;
+.giocatore {
+	margin-left: 25%;
+
 }
 
 .giocatore dt{
@@ -178,10 +183,8 @@ main{
     content: ": ";
 }
 */
-.riconoscimenti ul{
+dt.riconoscimenti {
     float:none;
-    
-    word-break: break-all;
 }
  
 
