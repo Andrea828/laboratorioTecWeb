@@ -48,7 +48,7 @@ header{
 	margin: 0.7em;
     background: url('./images/giannellipalleggio.jpg') right bottom no-repeat,
                 url('./images/michielettocoppa.jpg') left top no-repeat;
-    background-size: 20%,20%;
+    background-size: 20%, 20%;
 }
 
 header h1{
@@ -56,7 +56,7 @@ header h1{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    text-indent:  -9999px;
+    text-indent: -9999px; /* sposto il titolo fuori dalla visuale in modo che lo screen reader lo veda ma che graficamente non si veda (c'e' il logo al suo posto) */
     line-height: 1.5em;
     font-size: 6em;
 }
@@ -112,7 +112,7 @@ SEZIONE MENU
 
 #menu ul{
 	list-style-type: none;
-    /*list-style-position: inside;*/
+    /*list-style-position: inside;*/ /* come avevo fatto io per l'icona del currentLink */
 }
 
 #menu ul li{
@@ -120,12 +120,13 @@ SEZIONE MENU
 }
 
 #currentLink {
-    /*list-style-image: url('./images/favicon.ico');*/
+    /*list-style-image: url('./images/favicon.ico');*/ /* come avevo fatto io per l'icona del currentLink */
+    /* Non va bene perche' non posso decidere la dimensione dell'icona */
     background-image: url('./images/favpng_volleyball-icon.png');
     background-position: left center;
     background-size: 1.2em;
     background-repeat: no-repeat;
-    padding-left:1.5em;
+    padding-left: 1.5em;
 }
 
 
@@ -181,7 +182,7 @@ main{
 	color: var(--contentxtcolor);
  	background-color: var(--contentbgcolor);
  	
- }
+}
 
  /*
 ==============
@@ -192,11 +193,11 @@ SEZIONE FOOTER
 footer{
 	background-color: var(--breadcolor);
 	color: var(--txtcolor);
-	text-align: center;
+    text-align: center;
 }
 
-footer p {
-	display: inline;
-	font-size: italic;
-	font-size: 0.8em;
+footer p{
+    display: inline;
+    font-style: italic;
+    font-size: 0.8em;
 }
