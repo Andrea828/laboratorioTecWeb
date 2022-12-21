@@ -43,6 +43,30 @@ Class DBAccess {
         }
     }
 
+    public function insertNewPlayer($nome, $capitano, $dataNascita, $luogo, $squadra, $ruolo, $altezza, $maglia, $magliaNazionale, $punti, $riconoscimenti, $note) {
+        $queryString ="INSERT INTO giocatori (nome, capitano, dataNascita, luogo, squadra, ruolo, altezza. maglia, magliaNazionale, punti, riconoscimenti, note)
+        VALUES (\"$nome\", $capitano, \"$dataNascita\", \"$luogo\", \"$squadra\", \"$ruolo\", $altezza. $maglia, $magliaNazionale, $punti, \"$riconoscimenti\", \"$note\")";
+
+        $queryOk = mysqli_query($this->connection, $queryString) or die(mysqli_error($this->connection));
+
+        if(mysqli_affected_rows($this->connection) >0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function deletePlayer($id) {
+        $queryString ="DELETE FROM giocatori WHERE ID=$id";
+        $queryOk = mysqli_query($this->connection, $queryString) or die(mysqli_error($this->connection));
+
+        if(mysqli_affected_rows($this->connection) >0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public function closeConnection() {
         mysqli_close($this->connection);
     }
